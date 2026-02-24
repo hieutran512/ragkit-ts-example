@@ -1,4 +1,4 @@
-# ragkit-ts quality demo web app
+# Example project demonstrating RagKit usage in a TypeScript codebase.
 
 A simple TypeScript RAG app that:
 

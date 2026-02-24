@@ -1,6 +1,6 @@
 {
     "name": "rag-ts-example",
-    "description": "ragkit-ts quality demo web app",
+    "description": "Example project demonstrating RagKit usage in a TypeScript codebase.",
     "version": "0.1.0",
     "private": true,
     "type": "module",
