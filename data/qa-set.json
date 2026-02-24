@@ -1,0 +1,98 @@
+[
+    {
+        "id": "qa-auth-1",
+        "question": "How does the service validate a bearer token signature?",
+        "expectedFile": "src\\auth.ts",
+        "expectedKeywords": [
+            "Bearer",
+            "signature",
+            "JWT_SECRET",
+            "Invalid token signature"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-auth-2",
+        "question": "Which symbol extracts and validates the authorization header scheme?",
+        "expectedFile": "src\\auth.ts",
+        "expectedKeywords": [
+            "AuthService",
+            "extractBearerToken",
+            "InvalidScheme",
+            "Authorization header is required"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-rate-1",
+        "question": "Where is per-minute request throttling enforced and what happens when limit is exceeded?",
+        "expectedFile": "src\\rateLimiter.ts",
+        "expectedKeywords": [
+            "maxPerMinute",
+            "retryAfterSec",
+            "resetAt",
+            "allowed"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-rate-2",
+        "question": "What class stores buckets and computes remaining requests?",
+        "expectedFile": "src\\rateLimiter.ts",
+        "expectedKeywords": [
+            "InMemoryRateLimiter",
+            "RateLimitBucket",
+            "remaining",
+            "getOrCreateBucket"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-order-1",
+        "question": "How is an order confirmed after creation?",
+        "expectedFile": "src\\orders.ts",
+        "expectedKeywords": [
+            "createOrder",
+            "confirmOrder",
+            "pending",
+            "confirmed"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-order-2",
+        "question": "Which repository and service symbols are used to persist and confirm orders?",
+        "expectedFile": "src\\orders.ts",
+        "expectedKeywords": [
+            "OrderRepository",
+            "OrderService",
+            "findById",
+            "OrderStatus.Confirmed"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-billing-1",
+        "question": "How does billing authorize an order and what gateway contract is used?",
+        "expectedFile": "src\\billing.ts",
+        "expectedKeywords": [
+            "BillingService",
+            "authorizeOrder",
+            "PaymentGateway",
+            "charge"
+        ],
+        "minKeywordRecall": 0.5
+    },
+    {
+        "id": "qa-catalog-1",
+        "question": "Where is product filtering by active status, requiredTag, and search term implemented?",
+        "expectedFile": "src\\catalog.ts",
+        "expectedKeywords": [
+            "CatalogService",
+            "findProducts",
+            "requiredTag",
+            "activeOnly"
+        ],
+        "minKeywordRecall": 0.5
+    }
+]

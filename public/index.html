@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ragkit-ts QA Demo</title>
+    <link rel="stylesheet" href="/vendor/tree-sitter-ts-highlight/themes/github-dark.css" />
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <main>
+        <h1>ragkit-ts QA Demo</h1>
+        <p>Index the sample codebase, ask a question, and run the QA benchmark.</p>
+
+        <section>
+            <button id="indexBtn">Build Index</button>
+            <button id="evalBtn">Run QA Eval</button>
+            <div id="status" class="output"></div>
+        </section>
+
+        <section>
+            <label for="question">Question</label>
+            <textarea id="question" rows="4" placeholder="How is authentication token validated?"></textarea>
+            <button id="askBtn">Ask</button>
+        </section>
+
+        <section>
+            <h2>Answer</h2>
+            <div id="answer" class="output"></div>
+            <h2>Matches</h2>
+            <div id="matches" class="output"></div>
+        </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>
