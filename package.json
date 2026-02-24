@@ -1,5 +1,6 @@
 {
     "name": "rag-ts-example",
+    "description": "ragkit-ts quality demo web app",
     "version": "0.1.0",
     "private": true,
     "type": "module",
@@ -15,7 +16,7 @@
         "dotenv": "^16.6.1",
         "express": "^4.21.2",
         "ragkit-ts": "0.1.5",
-        "tree-sitter-ts-highlight": "^0.1.2"
+        "tree-sitter-ts-highlight": "^0.1.4"
     },
     "devDependencies": {
         "@types/express": "^4.17.23",
